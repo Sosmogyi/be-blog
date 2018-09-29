@@ -1,12 +1,12 @@
-const express = require('express')
-const serveStatic = require('serve-static')
-const path = require('path')
-const secure = require('express-force-https')
+import express from 'express';
+import serveStatic from 'serve-static';
+import { join } from 'path';
+import secure from 'express-force-https';
 // create the express app
 const app = express()
 app.use(secure)
 // create middleware to handle the serving the app
-app.use("/", serveStatic ( path.join (__dirname, '/dist') ) )
+app.use("/", serveStatic ( join (__dirname, '/dist') ) )
 // Catch all routes and redirect to the index file
 app.get('*', function (req, res) {
     res.sendFile(__dirname + '/dist/index.html')
