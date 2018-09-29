@@ -14,12 +14,14 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "express": "^4.16.3",
     "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "material-design-icons-iconfont": "^3.0.3",
     "path": "^0.12.7",
     "serve-static": "^1.13.2",
     "vue": "^2.5.17",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vuetify": "^1.2.5"
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",
@@ -31,6 +33,7 @@
     "@vue/cli-service": "^3.0.3",
     "babel-loader": "^8.0.4",
     "express": "^4.16.3",
+    "nodemon": "^1.18.4",
     "serve-static": "^1.13.2",
     "vue-template-compiler": "^2.5.17",
     "webpack": "^4.20.2"

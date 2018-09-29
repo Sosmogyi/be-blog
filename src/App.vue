@@ -20,11 +20,6 @@ export default {
 #body {
   padding: 0;
   margin: 0;
-  background-color: #1A1A1D;
-}
-
-#app {
-  
 }
 
 </style>
