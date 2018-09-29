@@ -1,10 +1,10 @@
 import express from 'express';
 import serveStatic from 'serve-static';
 import { join } from 'path';
-import secure from 'express-force-https';
+const bodyParser = require('body-parser')
 // create the express app
 const app = express()
-app.use(secure)
+app.use(bodyParser.json())
 // create middleware to handle the serving the app
 app.use("/", serveStatic ( join (__dirname, '/dist') ) )
 // Catch all routes and redirect to the index file
