@@ -90,10 +90,7 @@ export default {
       data: () => ({
       drawer: true,
       lorem: `Lorem ipsum dolor sit amet, mel at clita quando. Te sit oratio vituperatoribus, nam ad ipsum posidonium mediocritatem, explicari dissentiunt cu mea. Repudiare disputationi vim in, mollis iriure nec cu, alienum argumentum ius ad. Pri eu justo aeque torquatos.`
-    }),
-    props: {
-      source: String
-    }
+    })
   }
 </script>
 
@@ -116,7 +113,7 @@ export default {
 }
 
 #gridSystem {
-  margin-top: 8%;
+  margin-top: 11%;
 }
 .color2 {
   background-color: #6F2232;
