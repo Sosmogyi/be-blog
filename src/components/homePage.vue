@@ -113,7 +113,7 @@ export default {
 }
 
 #gridSystem {
-  margin-top: 11%;
+  margin-top: 15%;
 }
 .color2 {
   background-color: #6F2232;
