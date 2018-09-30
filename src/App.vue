@@ -1,22 +1,31 @@
 <template>
-  <div id="app">
-    <homePage />
-  </div>
+ <div id="app">
+  <v-app>
+    <navBar app/>
+    <v-content>
+      <v-container>
+       <router-view/>
+      </v-container>
+    </v-content>
+  </v-app>
+ </div>
 </template>
 
 <script>
-import homePage from './components/homePage.vue'
+import navBar from './components/navBar.vue'
 
 export default {
   name: 'app',
   components: {
-    homePage
+    navBar
   }
 }
 </script>
 
 <style>
-
+#app {
+  background-color: #1A1A1D;
+}
 #body {
   padding: 0;
   margin: 0;

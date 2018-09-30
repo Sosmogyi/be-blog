@@ -1,55 +1,26 @@
 <template>
   <v-app id="inspire">
-    <v-navigation-drawer
-      v-model="drawer"
-      clipped
-      fixed
-      app
-      id="navbar"
-    >
-      <v-list dense>
-        <v-list-tile @click="">
-          <v-list-tile-action>
-            <v-icon>dashboard</v-icon>
-          </v-list-tile-action>
-          <v-list-tile-content>
-            <v-list-tile-title class="textColor">programnyelvek</v-list-tile-title>
-          </v-list-tile-content>
-        </v-list-tile>
-        <v-list-tile @click="">
-          <v-list-tile-action>
-            <v-icon>settings</v-icon>
-          </v-list-tile-action>
-          <v-list-tile-content>
-            <v-list-tile-title class="textColor">IT hírek</v-list-tile-title>
-          </v-list-tile-content>
-        </v-list-tile>
-      </v-list>
-    </v-navigation-drawer>
-    <v-toolbar app fixed clipped-left id="header">
-      <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
-      <v-toolbar-title class="textColor">be-blog</v-toolbar-title>
-    </v-toolbar>
-
 <v-container fluid grid-list-md id="gridSystem">
     <v-layout row wrap>
       <v-flex d-flex xs12 sm6 md4>
-        <v-card color="purple" dark>
-          <v-card-title primary class="title">Lorem</v-card-title>
+        <v-card color="purple" dark hover>
+          <v-card-title primary class="title">kecske</v-card-title>
           <v-card-text>{{ lorem }}</v-card-text>
+            <v-btn bottom color="info">Info</v-btn>
         </v-card>
       </v-flex>
       <v-flex d-flex xs12 sm6 md3>
         <v-layout row wrap>
           <v-flex d-flex>
-            <v-card color="indigo" dark>
+            <v-card color="indigo" dark hover>
               <v-card-text>{{ lorem.slice(0, 70) }}</v-card-text>
+                <v-btn bottom color="info">Info</v-btn>
             </v-card>
           </v-flex>
           <v-flex d-flex>
             <v-layout row wrap>
               <v-flex
-                v-for="n in 2"
+                v-for="n in 1"
                 :key="n"
                 d-flex
                 xs12
@@ -57,8 +28,10 @@
                 <v-card
                   color="red lighten-2"
                   dark
+                  hover
                 >
                   <v-card-text>{{ lorem.slice(0, 40) }}</v-card-text>
+                    <v-btn bottom color="info">Info</v-btn>
                 </v-card>
               </v-flex>
             </v-layout>
@@ -66,21 +39,19 @@
         </v-layout>
       </v-flex>
       <v-flex d-flex xs12 sm6 md2 child-flex>
-        <v-card color="green lighten-2" dark>
+        <v-card color="green lighten-2" dark hover>
           <v-card-text>{{ lorem.slice(0, 90) }}</v-card-text>
+            <v-btn bottom color="info">Info</v-btn>
         </v-card>
       </v-flex>
       <v-flex d-flex xs12 sm6 md3>
-        <v-card color="blue lighten-2" dark>
+        <v-card color="blue lighten-2" dark hover>
           <v-card-text>{{ lorem.slice(0, 100) }}</v-card-text>
+            <v-btn bottom color="info">Info</v-btn>
         </v-card>
       </v-flex>
     </v-layout>
   </v-container>
-
-    <v-footer app fixed id="footer">
-      <span class="textColor">&copy; 2018</span>
-    </v-footer>
   </v-app>
 </template>
 
@@ -121,9 +92,5 @@ export default {
 
 .color4 {
   background-color: #C3073F;
-}
-
-#footer {
-  background-color: #4E4E50;
 }
 </style>
